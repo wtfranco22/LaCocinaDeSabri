@@ -1,0 +1,253 @@
+body {
+    background-color: black;
+}
+/*es el cuerpo del la pagina para registrarse*/
+body.login{
+    background-image: url(multimedia/fondoCuenta.jpg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Le quitamos el subrayado y le damos color*/
+.formulario a{
+    text-decoration: none;
+    color: #d1a939;
+}
+
+/* color distinto para mostrar que es enlace*/
+.formulario a:hover{
+    color: rgb(0, 60, 255);
+}
+
+/* le damos ubicacion sobre la carta del restaurante al formulario*/
+.formulario{
+    font-family:'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 22px;
+    position: relative;
+    margin-left: 17.5%;
+    margin-top: 6%;
+    border-spacing: 25px;
+    color: #d1a939;
+}
+
+
+
+/* Encabezado del la pagina principal*/
+.inicio h1{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+    background-color: #ffe600b0;
+}
+
+
+
+/* le damos un fondo a la primera vista*/
+.inicio{
+    background-color: black;
+    background-image: url(multimedia/fondoPresentacion.jpg);
+    background-size: 50%;
+    height: 100%;
+}
+
+
+/* ubicamos la barra de menu de la pagina*/
+.menu{
+    background-color: rgb(3, 0, 0);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* ocultamos los atras de cada opcion*/
+.opciones{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* agregamos espacios a los datos de las opciones y modificamos texto y posicion, forma de despliegue*/
+.opciones a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 25px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* nos ubicamos en el boton de opciones y modificamos*/
+.boton{
+    background-color: #f715abb9;
+    padding: 10px 50px;
+    color: black;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* mouse sobre las opcion*/
+.opciones a:hover{
+    background-color: #c5128fb9;
+}
+
+
+/* despliegue al sobre pasar el mouse*/
+.desplegar:hover .opciones{
+    background-color: #d827a3;
+    display: block;
+}
+
+
+/*color al desplegarse*/
+.desplegar:hover .boton{
+    background-color: #942372;
+}
+
+
+/*nos ubicacion en el texto de presentacion*/
+.presentacion{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    font-family:georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    background-color: #ffe600b0;
+    color: black;
+    margin-left: 40%;
+    margin-top: 10%;
+    padding: 20px 0px;
+    width: 15%;
+}
+
+/*-----------------------Hablamos de la historia-----------------------*/
+
+#historia{
+    color: #ffe600cb;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.562);
+    height: 100%;
+
+}
+
+#video{
+    width: 70%;
+    position: absolute;
+    margin: 4% 0% 0% 23%;
+    border-radius: 100%;
+    z-index: -1;
+}
+.lugar{
+    clear: both;
+    border:10px solid rgba(128, 0, 128, 0.596);
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(multimedia/fondoLugar.png);
+    height: 100%;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#mapa{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    float: left;
+}
+.lugar div{
+    background-color: rgba(0, 0, 0, 0.726);
+    position: relative;
+    float: right;
+    width: 45%;
+    padding-left: 5%;
+    padding-top: 5%;
+    height: 90.5%;
+    color: white;
+    font-size: 20px;
+}
+
+.lugar h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#experiencia{
+    background-color: rgb(0, 0, 0);
+}
+#experiencia table{
+    color: darkgoldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 25px;
+}
+#despedida{
+    position: relative;
+    float: right;    
+}
+
+/* comienza a darle estilo al menu*/
+#cartaMenu{
+    position: relative;
+    float: left;
+    width: 65%;
+    color: white;
+    font-size: 20px;
+
+}
+#pedido{
+    background-image: url(multimedia/libreta.png);
+    background-size: 100% 100%;
+    height: 100%;
+    right: 0;
+    position: fixed;
+    width: 35%;
+}
+#pedido h1{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 280%;
+    color: #926607;
+}
+
+.plato table{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#pedido table{
+    text-align: center;
+    width: 100%;
+    color: #b47e09;
+    font-size: 20px;
+}
+#anotador a{
+    text-decoration: none;
+    color: tomato;
+}
+#total{
+    position: absolute;
+    bottom: 25px;
+}
+#entrada table{
+    background-color:rgba(8, 10, 139, 0.432);
+}
+#principal table{
+    background-color: rgba(107, 75, 7, 0.692);
+}
+
+img{
+    border-radius: 90px;
+    border-style: groove;
+    height: 15%;
+}
+

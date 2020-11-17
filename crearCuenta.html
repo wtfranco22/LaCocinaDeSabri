@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        Formulario de registro
+    </title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script src="control.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+</head>
+
+<body class="login" onload="avisoEdad()">
+    <form id="creaCuenta" action="BaseDeDatos.php" method="GET" autocomplete="off" onsubmit="return validarDatos('crearCuenta')">
+        <table class="formulario">
+            <tr >
+                <td colspan="2">
+                    <a href="cocinaDeSabri.html">
+                        <h1>
+                            Cocina de Sabri
+                        </h1>
+                    </a>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Correo:</td>
+                <td><input id="correo" type="text" name="correo" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Nombre:</td>
+                <td><input id="nombre" type="text" name="nombre"maxlength="20"></td>
+            </tr>
+            <tr>
+                <td>Apellido:</td>
+                <td> <input id="apellido" type="text" name="apellido" maxlength="20" ></td>
+            </tr>
+            <tr>
+                <td>Nacimiento:</td>
+                <td><span id="edad">Debe ser mayor</span>
+                    <input id="anio" type="text"style="width: 45%;" maxlength="4"placeholder="a&ntilde;o">
+                    <input id="mes" type="text" style="width: 24%;" maxlength="2"placeholder="mes">
+                    <input id="dia" type="text" style="width: 24%;" maxlength="2" placeholder="dia">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Contrase&ntilde;a:</td>
+                <td><input id="pass" type="password" name="pass" maxlength="20" placeholder="8 caracteres minimos"></td>
+            </tr>
+            <tr>
+                <td>Telefono:</td>
+                <td> <input id="telefono" type="text" name="telefono" maxlength="20"></td>
+            </tr>
+            <tr>   <td></td>                 
+                <td>
+                    <input type="reset" onclick="limpiar()" value="Borrar">
+                    <input type="submit" value="Registar">
+                </td>
+            </tr>
+            <tr>
+                <td>¿Si tenes cuenta?</td>
+                <td ><a href="ingresarCuenta.html">Ingresar cuenta</a></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

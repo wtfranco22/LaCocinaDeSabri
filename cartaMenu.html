@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Menu</title>
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <script src="control.js" type="text/javascript"></script>
+
+</head>
+
+<body id="MenuCocina">
+    <div id="cartaMenu">
+        <a href="cocinaDeSabri.html">VOLVER</a>
+        <div id="entrada"><a name="#entrada"></a>
+            <form class="plato" id="sushi">
+                <table>
+                    <thead>
+                        <th colspan="5">
+                            Sushi
+                        </th>
+                    </thead>
+                    <tr>
+                        <td rowspan="7"><img src="multimedia/sushi.jpeg"></td>
+                        <td colspan="4">
+                            referencias de cada 8 piezas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombres</td>
+                        <td>Pedido</td>
+                        <td>Cantidad</td>
+                        <td>Precios</td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombrePlato">Maki: </label></td>
+                        <td><input type="radio" name="variedad" value="maki"></td>
+                        <td rowspan="4"><select class="cantidad">
+                                <option value="0" selected> </option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+                                <option value="24">24</option>
+                                <option value="32">32</option>
+                            </select></td>
+                        <td> $230</td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombrePlato">Chirashi: </label></td>
+                        <td><input type="radio" name="variedad" value="chirashi"></td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombrePlato">Temaki: </label></td>
+                        <td><input type="radio" name="variedad" value="temaki"></td>
+                        <td>$270</td>
+                    </tr>
+                    <tr>
+                        <td><label for="nombrePlato">Nirigi: </label></td>
+                        <td><input type="radio" name="variedad" value="nirigi"></td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Borrar"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="button" onclick="validarPedido('sushi')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="completo">
+                <table>
+                    <thead>
+                        <th colspan="5">
+                            completos
+                        </th>
+                    </thead>
+                    <tr>
+                        <td colspan="4">Por que un pancho, es muy poco!</td>
+                        <td rowspan="7"><img src="multimedia/completo.jpeg"></td>
+                    </tr>
+                    <tr>
+                        <td>Variedades</td>
+                        <td>Pedido</td>
+                        <td>Cantidad</td>
+                        <td>Precios</td>
+                    </tr>
+                    <tr>
+                        <td>Mediano</td>
+                        <td><input type="radio" name="variedad" value="mediano"></td>
+                        <td rowspan="4"><select class="cantidad">
+                                <option value="0" selected> </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select></td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Grande</td>
+                        <td><input type="radio" name="variedad" value="grande"></td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td>Chucrut</td>
+                        <td><input type="radio" name="variedad" value="chucrut"></td>
+                        <td>$280</td>
+                    </tr>
+                    <tr>
+                        <td>Complet&iacute;simo!</td>
+                        <td><input type="radio" name="variedad" value="completisimo"></td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Borrar"></td>
+                        <td></td>
+                        <td><input type="button" onclick="validarPedido('completo')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="empanadas">
+                <table>
+                    <thead>
+                        <th colspan="5">
+                            Empanadas
+                        </th>
+                    </thead>
+                    <tr>
+                        <td rowspan="7"><img src="multimedia/empanadas.jpeg"></td>
+                        <td colspan="4">Disfruta de las mejores empandas</td>
+                    </tr>
+                    <tr>
+                        <td>Variedades</td>
+                        <td>variedad</td>
+                        <td>Docenas</td>
+                        <td>Precios</td>
+                    </tr>
+                    <tr>
+                        <td>Arabes</td>
+                        <td><input type="radio" name="variedad" value="arabes"></td>
+                        <td rowspan="4"><select class="cantidad">
+                                <option value="0" selected> </option>
+                                <option value="1">1</option>
+                                <option value="1.5">1 1/2</option>
+                                <option value="2">2</option>
+                                <option value="2.5">2 1/2</option>
+                                <option value="3">3</option>
+                                <option value="3.5">3 1/2</option>
+                                <option value="4">4</option>
+                                <option value="4.5">4 1/2</option>
+                                <option value="5">5</option>
+                                <option value="5.5">5 1/2</option>
+                            </select></td>
+                        </td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Carne picada a cuchillo</td>
+                        <td><input type="radio" name="variedad" value="picada a cuchillo"></td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td>Jam&oacute;n y queso</td>
+                        <td><input type="radio" name="variedad" value="jamon y queso"></td>
+                        <td>$280</td>
+                    </tr>
+                    <tr>
+                        <td>Humitas</td>
+                        <td><input type="radio" name="variedad" value="humitas"></td>
+                        </td>
+                        <td>$280</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset" value="Borrar">
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="button" onclick="validarPedido('empanadas')" value="Anotar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="tablaCompartir">
+                <table>
+                    <thead>
+                        <th colspan="4">
+                            Tabla para compartir
+                        </th>
+                    </thead>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td rowspan="5"><img src="multimedia/Paracompartir.jpeg"></td>
+                    </tr>
+                    <tr>
+                        <td>Descripci&oacute;n</td>
+                        <td>Personas</td>
+                        <td>Precios</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Salchicha copet&iacute;n para <br />
+                            compartir, m&aacute;s rabas <br />
+                            crocantes frescos y riqu&iacute;simos<br />
+                            acompa&ntilde;ados por papas rusticas<br />
+                            de la casa
+                        </td>
+                        <td><input type="radio" name="variedad" value="2">2</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="variedad" value="4">4</td>
+                        <td>$600</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Borrar"></td>
+                        <td><input type="button" onclick="validarPedido('tablaCompartir')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="principal"><a name="#principal"></a>
+            <form class="plato" id="fideosVerduras">
+                <table>
+                    <thead>
+                        <th colspan="3">
+                            Fideos de Verduras
+                        </th>
+                    </thead>
+                    <tr>
+                        <td rowspan="3"><img src="multimedia/fideosVerduras.jpeg"></td>
+                        <td>Descripci&oacute;n</td>
+                        <td>Precio</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            Masa de fideos preparados
+                            <br />con verduras mixtas, con <br />
+                            salsa bolo&ntilde;esa para disfrutar
+                            <br />Fideos de:
+                            <ul>
+                                <li>remolacha</li>
+                                <li>zanahoria</li>
+                                <li>espinaca</li>
+                            </ul>
+                        </td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" onclick="validarPedido('fideosVerduras')" value="Anotar"> </td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="sorrentinos">
+                <table>
+                    <thead>
+                        <th colspan="5">
+                            Sorrentinos
+                        </th>
+                    </thead>
+                    <tr>
+                        <td>Descripci&oacute;n</td>
+                        <td>Masa</td>
+                        <td>Rellenos</td>
+                        <td>Precio</td>
+                        <td rowspan="5"><img src="multimedia/sorrentinos.jpeg"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Los mejores sorrentinos! <br />
+                            los encontras aca distintas<br />
+                            variedades para todos los gustos
+                            <br />El precio es depende del relleno</td>
+                        <td><input type="radio" name="masa" value="comun">Com&uacute;n</td>
+                        <td><input type="radio" name="variedad" value="pollo y verduras"> Pollo y verduras</td>
+                        <td>$230</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="masa" value="remolacha">Remolacha</td>
+                        <td><input type="radio" name="variedad" value="jamon y queso"> Jam&oacute;n y queso</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="masa" value="zanahoria">Zanahoria</td>
+                        <td><input type="radio" name="variedad" value="humitas"> Humitas</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="reset" value="Borrar"></td>
+                        <td></td>
+                        <td><input type="button" onclick="validarPedido('sorrentinos')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="peruana">
+                <table>
+                    <thead>
+                        <th colspan="3">
+                            Comida Peruana
+                        </th>
+                    </thead>
+                    <tr>
+                        <td rowspan="3"><img src="multimedia/peruana.jpeg"></td>
+                        <td>Descripci&oacute;n</td>
+                        <td>Precio</td>
+                    </tr>
+                    <tr>
+                        <td>La cocina peruana es el resultado de la fusi&oacute;n<br />
+                            inicial de la tradición culinaria del antiguo Per&uacute;<br />
+                            con sus propias t&eacute;cnicas y potajes</td>
+                        <td>$350</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" onclick="validarPedido('peruana')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+            <form class="plato" id="milanesa">
+                <table>
+                    <thead>
+                        <th colspan="3">
+                            <h4>Milanesa</h4>
+                        </th>
+                    </thead>
+                    <tr>
+                        <td>Descripci&oacute;n</td>
+                        <td>Precio</td>
+                        <td rowspan="3"><img src="multimedia/milanesa.jpeg"></td>
+                    </tr>
+                    <tr>
+                        <td>La infaltable milanesa, es un filete fino,<br />
+                            normalmente de carne vacuna, pasado<br />
+                            por huevo batido y luego por pan rallado<br />
+                        </td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" onclick="validarPedido('milanesa')" value="Anotar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div id="pedido">
+        <h1>
+            Pedido
+        </h1>
+        <table id="anotador">
+            <tr>
+                <td>Borrar</td>
+                <td>
+                    Descripcion
+                </td>
+                <td> Valor</td>
+            </tr>
+        </table>
+        <table id="total">
+            <tr>
+                <td>TOTAL</td>
+                <td><input type="button" onclick="pagar()" value="pagar"></td>
+                <td>----</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
