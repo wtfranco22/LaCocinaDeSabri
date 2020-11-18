@@ -15,13 +15,13 @@ class ConversacionComida extends Conversation
                 Button::create('Ver Plato')->value('milanesa'),
             ]);
         $this->ask($preguntas, function ($answer) {
-            //toma ambos $this->say('Un placer conocerte Don '.$answer->getValue());
             if ($answer->getValue() == 'milanesa') {
                 $imagen = new Image('http://localhost/LaCocinaDeSabri/multimedia/milanesa.jpeg');
                 $rta = OutgoingMessage::create('Mila C/fritas $400')->withAttachment($imagen);
                 $this->say($rta);
             }
-            $this->say('Puede ingresar a nuestro Menú &#8658; Entradas / Principal ');
+            $this->say('Puede ingresar a nuestro Menú &#8658; Entradas / Principal 
+            Ó ingrese <a href=\'../cartaMenu.html#principal\' target=\'_blank\'>Aquí</a>');
         });
     }
 }

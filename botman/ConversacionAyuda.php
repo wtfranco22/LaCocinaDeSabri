@@ -8,7 +8,7 @@ class ConversacionAyuda extends Conversation
 {
 
     public function run (){
-        $preguntas = Question::create('¿En que puedo ayudarte?')
+        $preguntas = Question::create('opciones de ayuda')
         ->addButtons([
             Button::create('Crear Cuenta')->value('crear'),
             Button::create('Realizar Pedido')->value('encargar'),
@@ -20,10 +20,12 @@ class ConversacionAyuda extends Conversation
             if($answer->isInteractiveMessageReply()){
                 //toma ambos $this->say('Un placer conocerte Don '.$answer->getValue());
                 if($answer->getValue()=='crear'){
-                   $this->say('Vaya a la parte superior<br>Ingrese a Cuenta &#8658; CrearCuenta'); 
+                   $this->say('Vaya a la parte superior<br>Ingrese a Cuenta &#8658; CrearCuenta<br>
+                   Ó ingrese <a href=\'../CrearCuenta.html\' target=\'_blank\'>Aquí</a>'); 
                 }
                 elseif($answer->getValue()=='encargar'){
-                    $this->say('En este caso usted puede ingresar a nuestro Menú &#8658; Entradas / Principal ');
+                    $this->say('En este caso usted puede ingresar a nuestro Menú &#8658; Entradas / Principal<br>
+                    Ó ingrese <a href=\'../CartaMenu.html\' target=\'_blank\'>Aquí</a>');
                 }
                 elseif($answer->getValue()=='horarios'){
                     $this->say('Horarios:<br>
