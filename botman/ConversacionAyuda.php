@@ -4,7 +4,7 @@ use BotMan\BotMan\Messages\Conversations\Conversation;
 use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 use BotMan\BotMan\Messages\Outgoing\Question;
 
-class ButtonConversation extends Conversation
+class ConversacionAyuda extends Conversation
 {
 
     public function run (){
@@ -20,10 +20,10 @@ class ButtonConversation extends Conversation
             if($answer->isInteractiveMessageReply()){
                 //toma ambos $this->say('Un placer conocerte Don '.$answer->getValue());
                 if($answer->getValue()=='crear'){
-                   $this->say('Ingrese a Cuenta -> CrearCuenta'); 
+                   $this->say('Vaya a la parte superior<br>Ingrese a Cuenta &#8658; CrearCuenta'); 
                 }
                 elseif($answer->getValue()=='encargar'){
-                    $this->say('En este caso usted puede ingresar a nuestro Menú -> Entradas / Principal ');
+                    $this->say('En este caso usted puede ingresar a nuestro Menú &#8658; Entradas / Principal ');
                 }
                 elseif($answer->getValue()=='horarios'){
                     $this->say('Horarios:<br>
@@ -36,7 +36,7 @@ class ButtonConversation extends Conversation
                     Efectivo <img height=\'15px\' src=\'efectivo.png\' /> con 20% de descuento');
                 }
             }else{
-                $this->say('No es valida la opción');
+                $this->say('Seleccione una opcion');
                 $this->repeat();
             }
         });

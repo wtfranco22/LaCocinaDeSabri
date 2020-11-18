@@ -300,6 +300,7 @@ function cargarPedido(nameForm, variedad, cantidad, costo) {
     var borra = filas.insertCell(0);
     var desc = filas.insertCell(1);
     var cost = filas.insertCell(2);
+    
     switch (nameForm) {
         case 'sushi':
             borra.innerHTML = "<a href='#' onclick='borrarFila(this.parentNode.parentNode.rowIndex)'>X</a>";
@@ -342,6 +343,8 @@ function cargarPedido(nameForm, variedad, cantidad, costo) {
             cost.innerHTML = costo;
             break;
     }
+    var total = document.getElementById('saldoTotal');
+    total.value = parseInt(total.value) + parseInt(costo) ;
     document.getElementById(nameForm).reset();
     return true;
 }
