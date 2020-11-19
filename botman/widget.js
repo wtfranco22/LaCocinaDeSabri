@@ -1405,7 +1405,7 @@
         mobileHeight: "100%",
         mobileWidth: "300px",
         videoHeight: 160,
-        aboutLink: "https://botman.io",
+        aboutLink: "https://github.com/wtfranco22/LaCocinaDeSabri",
         aboutText: "⚡ Powered by BotMan",
         chatId: "",
         userId: "",

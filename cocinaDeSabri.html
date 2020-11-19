@@ -7,23 +7,23 @@
     <link href="estilo.css" rel="styleSheet" type="text/css" />
     <script src="control.js" type="text/javascript"></script>
     <a name="up"></a>
-    
+
     <script src="botman/widget.js" type="text/javascript"></script>
     <script type="text/javascript">
-      var botmanWidget = {
-          frameEndpoint: 'botman/chat.html', // configuraciones
-          introMessage: 'Bienvenido soy <b>Wally</b> <br>En que puedo servirle?', //saludo inicial
-          chatServer : 'botman.php',
-          title: 'Asistente', //titulo del chat
-          dateTimeFormat: 'Y-m-d H:i:s',
-          placeholderText: 'Enviar mensaje...',
-          displayMessageTime:true,
-          mainColor: 'orange' , //encabezado
-          bubbleBackground: 'orange', //burbuja 
-          bubbleAvatarUrl: URL=("botman/logo.png"),
-          aboutText:'Fabian y Franco',
-      };
-  </script>
+        var botmanWidget = {
+            frameEndpoint: 'botman/chat.html', // configuraciones
+            introMessage: 'Bienvenido soy <b>Wally</b> <br>En que puedo servirle?', //saludo inicial
+            chatServer: 'botman.php',
+            title: 'Asistente Wally', //titulo del chat
+            dateTimeFormat: 'Y-m-d H:i:s',
+            placeholderText: 'Enviar mensaje...',
+            displayMessageTime: true,
+            mainColor: '#ffe600', //encabezado
+            bubbleBackground: '#ffe600', //burbuja 
+            bubbleAvatarUrl: URL = ("botman/logo.png"),
+            aboutText: 'Fabian y Franco',
+        };
+    </script>
 </head>
 
 <body onload="ocultarSaludo()">
@@ -47,8 +47,7 @@
                     <button class="boton">Local</button>
                     <div class="opciones">
                         <a href="#ubicacion">Ubicaci&oacute;n</a>
-                        <a href="https://wa.me/5492996017699?text=Hola!%20quiero%20realizar%20un%20pedido."
-                            target="_blank">Whatsapp</a>
+                        <a href="https://wa.me/5492996017699?text=Hola!%20quiero%20realizar%20un%20pedido." target="_blank">Whatsapp</a>
                     </div>
                 </td>
                 <td class="desplegar">
@@ -65,14 +64,13 @@
         <h1>
             La Cocina de Sabri
         </h1>
-        
+
         <div class="presentacion">
-            En "La cocina de Sabri" vas a encontrar platos rusticos de
-            calidad, ideal para deleitar tu paladar.<br />
-            Ven&iacute; a disfrutar junto a nosotros, te esperamos junto a nuestro arte culinario
+            En "La cocina de Sabri" vas a encontrar platos rusticos de calidad, ideal para deleitar tu paladar.<br /> Ven&iacute; a disfrutar junto a nosotros, te esperamos junto a nuestro arte culinario
         </div>
     </div>
-    <div id="historia"><a name="historia"></a>
+    <div id="historia">
+        <a name="historia"></a>
         <video id="video" autoplay muted loop playsinline="playsinline" preload="metadata" data-aos="fade-up">
             <source src="multimedia/historia.mp4" type="video/mp4">
             <source src="multimedia/historia.ogg" type="video/ogg">
@@ -80,56 +78,35 @@
             No podemos reproducir el video :(<br />
         </video>
         <h1>HISTORIA</h1>
-        Soy Sabrina, una joven nacida y criada
-        en <br />Centenario. ¿C&oacute;mo surge este peque&ntilde;o <br />
-        emprendimiento?. En primer lugar,<br />
-        naci&oacute;, y sigue estando, cargado de<br />
-        amor y sue&ntilde;os. En una noche fr&iacute;a <br />
-        de invierno en el a&ntilde;o 2017, quise<br />
-        agasajar a m&iacute; familia con un <br />
-        c&aacute;lido plato de pastas. Y fue<br />
-        allí donde comprend&iacute;, que la <br />
-        mayor expresi&oacute;n de amor que<br />
-        pod&iacute;a ofrecer, era a trav&eacute;s de la<br />
-        comida, m&aacute;s espec&iacute;ficamente, co-<br />
-        cinando. En ese momento, es cuando <br />
-        florece este peque&ntilde;o emprendimiento, <br />
-        y junto a &eacute;l, los sue&ntilde;os. Con el objetivo, de <br />
-        poder transmitir a m&aacute;s personas, el amor con el <br />
-        cu&aacute;l imaginaba, seleccionaba y preparaba cada plato.<br />
-        Y as&iacute;, es como en &eacute;ste 2020 estamos cumpliendo 3 a&ntilde;os junto<br />
-        a ustedes, quienes son los protagonistas principales de este sue&ntilde;o. Gracias por acompa&ntilde;arnos y
-        elegirnos cada
-        d&iacute;a.
+        Soy Sabrina, una joven nacida y criada en <br />Centenario. ¿C&oacute;mo surge este peque&ntilde;o <br /> emprendimiento?. En primer lugar,<br /> naci&oacute;, y sigue estando, cargado de<br /> amor y sue&ntilde;os. En una noche fr&iacute;a <br
+        /> de invierno en el a&ntilde;o 2017, quise<br /> agasajar a m&iacute; familia con un <br /> c&aacute;lido plato de pastas. Y fue<br /> allí donde comprend&iacute;, que la <br /> mayor expresi&oacute;n de amor que<br /> pod&iacute;a ofrecer, era
+        a trav&eacute;s de la<br /> comida, m&aacute;s espec&iacute;ficamente, co-<br /> cinando. En ese momento, es cuando <br /> florece este peque&ntilde;o emprendimiento, <br /> y junto a &eacute;l, los sue&ntilde;os. Con el objetivo, de <br /> poder
+        transmitir a m&aacute;s personas, el amor con el <br /> cu&aacute;l imaginaba, seleccionaba y preparaba cada plato.<br /> Y as&iacute;, es como en &eacute;ste 2020 estamos cumpliendo 3 a&ntilde;os junto<br /> a ustedes, quienes son los protagonistas
+        principales de este sue&ntilde;o. Gracias por acompa&ntilde;arnos y elegirnos cada d&iacute;a.
     </div>
-    <div class="lugar"><a name="ubicacion"></a>
-        <iframe id="mapa"
-            src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=-38.82392418238947,-68.14038276672365&q=Honduras%201210%20centenario+(La%20Cocina%20de%20Sabri)&ie=UTF8&t=&z=17&iwloc=B&output=embed"
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    <div class="lugar">
+        <a name="ubicacion"></a>
+        <iframe id="mapa" src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=-38.82392418238947,-68.14038276672365&q=Honduras%201210%20centenario+(La%20Cocina%20de%20Sabri)&ie=UTF8&t=&z=17&iwloc=B&output=embed" frameborder="0" scrolling="no"
+            marginheight="0" marginwidth="0">
             <a href="https://www.mapsdirections.info/marcar-radio-circulo-mapa/">Dibuja un circulo Google
                 Maps</a>
         </iframe>
         <div>
             <h1>Cocina de Sabri</h1>
             Nos encontramos en frente de la Avenida del Libertador<br /> y calle Honduras, justo en esquina.
-            <br /><br /><br />
-            Estamos de lunes a s&aacute;bado.
+            <br /><br /><br /> Estamos de lunes a s&aacute;bado.
             <ul><strong><u>Horarios:</u></strong><br />
                 <li>10:00 hs a 14:00 hs.</li>
                 <li> 19:30 a 23:30 hs.</li>
             </ul>
             <u>Tel&eacute;fono:</u> (0299) 489-1234.<br />
             <u>Celular:</u> (0299) 6017-699.<br />
-            <br />
-            Consultanos por delivery, tu consulta no molesta :) <br /><a
-                href="https://wa.me/5492996017699?text=Hola!%20quiero%20realizar%20un%20pedido." target="_blank"><button
-                    class="boton">Whatsapp</button></a><br /><br /><br />
-            Comparte con nosotros tu experiencia! <br />
+            <br /> Consultanos por delivery, tu consulta no molesta :) <br /><a href="https://wa.me/5492996017699?text=Hola!%20quiero%20realizar%20un%20pedido." target="_blank"><button
+                    class="boton">Whatsapp</button></a><br /><br /><br /> Comparte con nosotros tu experiencia! <br />
             <a href="#experiencia"><button class="boton">Comentanos</button></a>
         </div>
     </div>
-    <video id="despedida" autoplay="autoplay" muted loop playsinline="playsinline" preload="metadata"
-        data-aos="fade-up">
+    <video id="despedida" autoplay="autoplay" muted loop playsinline="playsinline" preload="metadata" data-aos="fade-up">
         <source src="multimedia/saludo.mp4" type="video/mp4">
         <source src="multimedia/saludo.ogg" type="video/ogg">
         <source src="multimedia/saludo.webm" type="video/webm">
@@ -168,8 +145,7 @@
             </tr>
             <tr>
                 <td>Comentario: </td>
-                <td><textarea id="comentario" style="height: 100px; width: 500px;" maxlength="100"
-                        placeholder="Comparte tu experiencia con nosotros! :)"></textarea></td>
+                <td><textarea id="comentario" style="height: 100px; width: 500px;" maxlength="100" placeholder="Comparte tu experiencia con nosotros! :)"></textarea></td>
             </tr>
             <tr>
                 <td></td>
